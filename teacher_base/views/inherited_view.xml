@@ -1,0 +1,18 @@
+<odoo>
+    <data>
+        <record id="view__form_inherit" model="ir.ui.view">
+            <field name="name">academy_teacher_form.inherit.country</field>
+            <field name="model">person.person</field>
+            <field name="inherit_id" ref="teacher_base.academy_teacher_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <label for="country"/>
+                    <field name="country"/>
+                    <label for="age"/>
+                    <field name="age"/>
+
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
